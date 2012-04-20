@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Html5-jquery-placeholder-shiv by albybarber</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/albybarber/HTML5-jQuery-placeholder-shiv">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/albybarber/HTML5-jQuery-placeholder-shiv/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/albybarber/HTML5-jQuery-placeholder-shiv/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Html5-jquery-placeholder-shiv</h1>
+          <p>A HTML5 jQuery placeholder, that works for non-native browsers</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/albybarber">albybarber</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>Demo and Examples</h2>
+
+<h3>HTML</h3>
+
+<div class="highlight">
+<pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"exampleInput textInput placeholder"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">data-placeholder=</span><span class="s">"Enter a Value"</span> <span class="na">placeholder=</span><span class="s">"Enter a Value"</span> <span class="na">name=</span><span class="s">"exampleInput"</span><span class="nt">&gt;</span>
+</pre>
+</div>
+
+
+<h4>HTML Explained</h4>
+
+<ul>
+<li>
+<p><em>data-placeholder="Enter a Value"</em> - (non HTML5 browsers)</p>
+
+<ul>
+<li>Add this if you want to have lots of inputs with placeholders and different values for each.</li>
+<li>Otherwise you can specify it via the JS or leave it to the default value</li>
+</ul>
+</li>
+<li>
+<p><em>placeholder="Enter a Value"</em> - (HTML5 browsers)</p>
+
+<ul>
+<li>This is the HTML5 attribute 'placeholder'</li>
+</ul>
+</li>
+</ul><p>How to use the plugin:</p>
+
+<h3>jQuery (JS)</h3>
+
+<p>The passed element does not need to be '.placeholder' but it would probably be smart to add it to all of you inputs that you wanted to have placeholders</p>
+
+<div class="highlight">
+<pre><span class="nx">jQuery</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Using the plugin without parameters</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s1">'input.placeholder'</span><span class="p">).</span><span class="nx">placeholder</span><span class="p">();</span>
+
+<span class="c1">// or</span>
+
+<span class="c1">// Adding custom text to a placeholder when the 'data-placeholder' attribute is not present</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s1">'input.placeholderSpecial'</span><span class="p">).</span><span class="nx">placeholder</span><span class="p">(</span><span class="s1">'start'</span><span class="p">,{</span><span class="nx">text</span> <span class="o">:</span> <span class="s1">'Enter a Special Value...'</span><span class="p">});</span>
+
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<p>Thanks,
+Alby</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31065212-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
