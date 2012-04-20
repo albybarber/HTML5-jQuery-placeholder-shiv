@@ -13,11 +13,13 @@ A HTML5 jQuery placeholder, that works for non-native browsers.
 
 #### HTML Explained
 
- * data-placeholder="Enter a Value" - This is the place holder value you wish to appear (non HTML5 browsers)
-                                    - If no value is entered it will default specified by the JS
-                                    - This is not required if you don't mind the Js defualt
+ * *data-placeholder="Enter a Value"*
+  * This is the place holder value you wish to appear (non HTML5 browsers)
+  * If no value is entered it will default specified by the JS
+  * This is not required if you don't mind the Js defualt
  
- * placeholder="Enter a Value"      - This is the HTML5 attribute 'placeholder' (HTML5 browsers)
+ * *placeholder="Enter a Value"*
+  * This is the HTML5 attribute 'placeholder' (HTML5 browsers)
 
 
 How to use the plugin:
