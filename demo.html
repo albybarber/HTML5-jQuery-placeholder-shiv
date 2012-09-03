@@ -6,9 +6,8 @@
     <title>Html5-jquery-placeholder-shiv by albybarber</title>
     <link rel="stylesheet" href="http://albybarber.github.com/HTML5-jQuery-placeholder-shiv/stylesheets/styles.css">
     <link rel="stylesheet" href="http://albybarber.github.com/HTML5-jQuery-placeholder-shiv/stylesheets/pygment_trac.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://albybarber.github.com/HTML5-jQuery-placeholder-shiv/javascripts/respond.js"></script>
-    <script src="/PlaceholderShiv.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,18 +18,16 @@
 
     <style>
 
-      .demo {
-          margin: 0 auto;
-          width: 250px;
-      }
-
+    .demo {
+        margin: 0 auto;
+        width: 250px;
+    }
       .demo input {
           width: 250px;
           font-size: 2em;
       }
 
     </style>
-
 
   </head>
   <body>
@@ -52,7 +49,6 @@
           <p>A HTML5 jQuery placeholder, that works for non-native browsers</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/albybarber">albybarber</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
         </div>
 
         <h2>Demo and Examples</h2>
@@ -64,23 +60,15 @@
 </pre>
 </div>
 
-<h3>DEMO</h3>
-
-<div class="highlight demo">
-<input type="text" class="exampleInput textInput placeholder" value="" data-placeholder="Enter a Value" placeholder="Enter a Value" name="exampleInput">
-</pre>
-</div>
-
-
 <h4>HTML Explained</h4>
 
 <ul>
 <li>
-<p><em>data-placeholder="Enter a Value"</em> - (non HTML5 browsers)</p>
-
+<p>About the <em>data-placeholder="Enter a Value"</em> - (non HTML5 browsers)</p>
 <ul>
-<li>Add this if you want to have lots of inputs with placeholders and different values for each.</li>
-<li>Otherwise you can specify it via the JS or leave it to the default value</li>
+<li>Add <em>data-placeholder="Enter a Value"</em> if you want to have inputs with placeholders and different values for each.</li>
+<li>Otherwise you can specify it via the JS plugin e.g. jQuery().placeholder('start',{text : 'Enter a Special Value...'})</li>
+<li>Or stick with the default value <em>"Enter a Value"</em></li>
 </ul>
 </li>
 <li>
@@ -91,6 +79,12 @@
 </ul>
 </li>
 </ul><p>How to use the plugin:</p>
+
+<h3>DEMO</h3>
+
+<div class="highlight demo">
+<input type="text" class="exampleInput textInput placeholder" value="" placeholder="Enter a Value" name="exampleInput">
+</div>
 
 <h3>jQuery (JS)</h3>
 
@@ -115,6 +109,13 @@ Alby</p>
       </section>
 
     </div>
+
+<script src="PlaceholderShiv.js"></script>
+<script>
+  // This would normally be within your scripts.js file
+  jQuery('.exampleInput').placeholder();
+</script>
+
 
   </body>
 </html>
